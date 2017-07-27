@@ -9,7 +9,7 @@ using System.Text;
  * Date: July 27, 2017
  * Description: This is the Hand class
  * It inherits from the CardList class
- * Version: 0.4 - Fixed a bug - non-implemented _initialize method
+ * Version: 0.5 - Added HighestCards() method
  */
 
 namespace COMP123_S2017_Lab25
@@ -58,19 +58,12 @@ namespace COMP123_S2017_Lab25
 
             foreach (var card in highestCards)
             {
-                Console.WriteLine(card);
-
-                }
-                //for (int i = 0; i < 4; i++)
-                //{
-
-                //}
-
-
+                int temp = (int)highestCards.First().Face;
+                if ((int)card.Face < temp)
+                    break;
+                else
+                    Console.WriteLine(card);
             }
-
-
-
-
+        }
     }
 }
