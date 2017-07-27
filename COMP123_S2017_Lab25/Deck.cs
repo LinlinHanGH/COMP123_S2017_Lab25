@@ -9,7 +9,7 @@ using System.Text;
  * Date: July 25, 2017
  * Description: This is the Deck class.
  * It inherits from the CardList class
- * Version: 0.6 - Added Deal5 method
+ * Version: 0.6 - Added Deal5 method to Deck class
  */
 
 namespace COMP123_S2017_Lab25
@@ -116,6 +116,7 @@ namespace COMP123_S2017_Lab25
                 hand.Add(card_i);
             }
             return hand;
+
         }
     }
 }
