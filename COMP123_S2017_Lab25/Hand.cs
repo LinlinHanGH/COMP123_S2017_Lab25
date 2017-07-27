@@ -51,6 +51,23 @@ namespace COMP123_S2017_Lab25
             return outputString;
         }
 
+        public void HighestCards()
+        {
+
+            var highestCards = (from card in this orderby card.Face descending select card);
+
+            foreach (var card in highestCards)
+            {
+                Console.WriteLine(card);
+
+                }
+                //for (int i = 0; i < 4; i++)
+                //{
+
+                //}
+
+
+            }
 
 
 

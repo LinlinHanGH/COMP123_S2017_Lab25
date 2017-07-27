@@ -102,8 +102,6 @@ namespace COMP123_S2017_Lab25
         {
             Card firstCard = (Card)this[0].Clone();
             this.RemoveAt(0); // removes the top card
-
-            Console.WriteLine("Deck Contains: " + this.Count + " Cards");
             return firstCard;
         }
 
@@ -118,5 +116,7 @@ namespace COMP123_S2017_Lab25
             return hand;
 
         }
+
+        
     }
 }

@@ -27,15 +27,10 @@ namespace COMP123_S2017_Lab25
             Console.WriteLine(deck.ToString());
             Console.WriteLine();
 
-            /*
-            hand.Add(deck.Deal1()); // deal one card from the top of the deck
+            hand = deck.Deal5(); // creates a new Hand object and assigns it to hand
             Console.WriteLine(hand.ToString());
-            Console.WriteLine();
-            hand.Add(deck.Deal1()); // deal one card from the top of the deck
-            Console.WriteLine(hand.ToString());
-            */
 
-            // hand = deck.Deal5(); // creates a new Hand object and assigns it to hand
+            
         }
     }
 }

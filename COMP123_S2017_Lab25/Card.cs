@@ -10,7 +10,7 @@ using System.Text;
  * Date: July 25, 2017
  * Description: This is the Card class to be used in the
  * card shuffling and dealing simulation
- * Version: 0.2 - Added Clone method
+ * Version: 0.3 - Added ToString method
  */
 
 namespace COMP123_S2017_Lab25
@@ -80,6 +80,13 @@ namespace COMP123_S2017_Lab25
         public object Clone()
         {
             return new Card(this.Face, this.Suit);
+        }
+
+        public override string ToString()
+        {
+            string outputString = "";
+            outputString += "The " + this.Face + " of " + this.Suit + "\n";
+            return outputString;
         }
 
     }
