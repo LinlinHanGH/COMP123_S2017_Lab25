@@ -41,7 +41,7 @@ namespace COMP123_S2017_Lab25
         {
             string outputString = "";
             outputString += "The Hand contains:\n";
-            outputString += "================================================\n";
+            outputString += "----------------------------------------------------\n";
 
             foreach (Card card in this)
             {
@@ -53,6 +53,8 @@ namespace COMP123_S2017_Lab25
 
         public void HighestCards()
         {
+            Console.WriteLine("The most valuable card(s) in a hand is(are): ");
+            Console.WriteLine("----------------------------------------------------");
 
             var highestCards = (from card in this orderby card.Face descending select card);
 

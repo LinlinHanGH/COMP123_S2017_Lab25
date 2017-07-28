@@ -9,7 +9,7 @@ using System.Threading.Tasks;
  * Number: 300883493
  * Date: July 25, 2017
  * Description: Demo for Lesson 11
- * Version: 0.4 - Updated the Program class to include comments for Lab 25
+ * Version: 0.5 - Updated the Program class to call Deal5() method and Highest method
  */
 
 namespace COMP123_S2017_Lab25
@@ -29,8 +29,7 @@ namespace COMP123_S2017_Lab25
 
             hand = deck.Deal5(); // creates a new Hand object and assigns it to hand
             Console.WriteLine(hand.ToString());
-
-            
+            hand.HighestCards();
         }
     }
 }
